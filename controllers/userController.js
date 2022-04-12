@@ -1,9 +1,9 @@
-const user = require('../models/User');
+const user = require('../models/Admins');
 
 const controller = {
     createUser: (req, res) => {
         user.create({
-            username: req.body.username, 
+            username: req.body.username,
             email: req.body.email,
             password: req.body.password,
         }).then(() => {
@@ -40,7 +40,7 @@ const controller = {
             }
         }).then(user => {
             return res.status(200).json({
-                error: false, 
+                error: false,
                 user
             });
         }).catch(() => {
@@ -89,7 +89,9 @@ const controller = {
                 message: "Erro ao deletar usuário",
             });
         });
-    }
+    },
+
 }
+
 
 module.exports = controller;

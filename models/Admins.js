@@ -1,6 +1,6 @@
 const db = require('./Db');
 
-const user = db.connection.define('users', {
+const admins = db.connection.define('admins', {
     id: {
         type: db.sequelize.INTEGER, 
         primaryKey: true,
@@ -17,8 +17,8 @@ const user = db.connection.define('users', {
     }
 });
 
-// user.sync({
+// admins.sync({
 //     force: true,    
 // });
 
-module.exports = user;
+module.exports = admins;
