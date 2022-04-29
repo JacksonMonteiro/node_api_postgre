@@ -51,6 +51,7 @@ const controller = {
                 error: true,
                 message: "Erro ao realizar login",
                 auth: false,
+                token: null
             })
         })
     },

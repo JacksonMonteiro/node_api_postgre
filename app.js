@@ -13,5 +13,5 @@ app.use(routes);
 
 // App listen
 app.listen(3000, () => {
-    console.log('Servidor iniciado em http://localhost:3000/');
+    console.log('Servidor iniciado em http://192.168.124.107:3000/');
 });
